@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ravex Image Tool</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Image Compressor & Resizer</h1>
+
+    <input type="file" id="upload" accept="image/*">
+
+    <div class="controls">
+      <label>Width: <input type="number" id="width"></label>
+      <label>Height: <input type="number" id="height"></label>
+      <label><input type="checkbox" id="lockRatio" checked> Lock Ratio</label>
+      <label>Quality (1-100):
+        <input type="number" id="quality" min="1" max="100" value="95">
+      </label>
+    </div>
+
+    <button id="process">Process</button>
+
+    <h2>Preview</h2>
+    <div class="preview">
+      <div>
+        <h3>Original</h3>
+        <img id="original">
+        <p id="originalSize"></p>
+      </div>
+      <div>
+        <h3>Compressed</h3>
+        <img id="result">
+        <p id="resultSize"></p>
+      </div>
+    </div>
+    <a id="download" download="compressed.jpg">Download</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
