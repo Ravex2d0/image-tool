@@ -1,6 +1,7 @@
 body {
   font-family: sans-serif;
-  background: radial-gradient(circle at 70% 50%, #2d104d, #10154d) center/cover;
+  background: radial-gradient(at 97% 4%, #3f68fc 0px, transparent 50%), radial-gradient(at 55% 63.9%, #753ffc 0px, transparent 50%), radial-gradient(at 11% 30%, #d33ffc 0px, transparent 50%) #000000;
+  mix-blend-mode: screen;
   color: white;
   padding: 20px;
 }
@@ -30,7 +31,6 @@ input[type="file"]::file-selector-button {
   height: 30px;
   background: rgba(255, 255, 255, 0.2);
   border: none;
-  border-radius: 10px 0 0 10px;
   padding: 8px 14px;
   color: white;
   transition: 0.2s;
@@ -51,7 +51,7 @@ input[type="number"] {
   width: 80px;
   height: 20px;
   background: rgba(255, 255, 255, 0.2);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: none;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
   border-radius: 20px;
   color: white;
@@ -121,4 +121,4 @@ button:hover {
 }
 #download:hover {
   background: rgba(255, 255, 255, 0.35);
-}
+  }
